@@ -198,7 +198,7 @@ PROCESSING_SUBSYSTEM_DEF(quirks)
 	var/list/positive_quirks = list()
 	var/points_enabled = !CONFIG_GET(flag/disable_quirk_points)
 	var/max_positive_quirks = CONFIG_GET(number/max_positive_quirks)
-	var/balance = 0
+	var/balance = 20
 
 	var/list/all_quirks = get_quirks()
 

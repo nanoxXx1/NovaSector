@@ -152,6 +152,26 @@
 	. = ..()
 	allowed = GLOB.security_vest_allowed
 
+/obj/item/clothing/suit/toggle/owlwings/god
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	cold_protection = CHEST | GROIN | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = SPACE_SUIT_MAX_TEMP_PROTECT
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	armor_type = /datum/armor/owl_wing
+
+/datum/armor/owl_wing
+	melee = 1000
+	bullet = 1000
+	laser = 1000
+	energy = 1000
+	bomb = 1000
+	bio = 1000
+	fire = 1000
+	acid = 1000
+	wound = 1000
+
 /obj/item/clothing/suit/toggle/owlwings/griffinwings
 	name = "griffon cloak"
 	desc = "A plush white cloak made of synthetic feathers. Soft to the touch, stylish, and a 2 meter wing span that will drive your captives mad."

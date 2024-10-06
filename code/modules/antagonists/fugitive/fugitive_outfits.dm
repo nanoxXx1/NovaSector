@@ -58,6 +58,21 @@
 	var/datum/action/cooldown/spell/aoe/knock/waldos_key = new(equipped_on.mind || equipped_on)
 	waldos_key.Grant(equipped_on)
 
+/datum/outfit/theowl
+	name = "The Owl"
+	uniform = /obj/item/clothing/under/costume/owl/god
+	suit = /obj/item/clothing/suit/toggle/owlwings/god
+	mask = /obj/item/clothing/mask/gas/owl_mask/god
+
+/datum/outfit/theowl/post_equip(mob/living/carbon/human/equipped_on, visualsOnly=FALSE)
+	var/list/no_drops = list()
+	no_drops += equipped_on.get_item_by_slot(ITEM_SLOT_MASK)
+	no_drops += equipped_on.get_item_by_slot(ITEM_SLOT_ICLOTHING)
+	no_drops += equipped_on.get_item_by_slot(ITEM_SLOT_OCLOTHING)
+
+	for(var/obj/item/trait_needed as anything in no_drops)
+		ADD_TRAIT(trait_needed, TRAIT_NODROP, CURSED_ITEM_TRAIT(trait_needed.type))
+
 /datum/outfit/synthetic
 	name = "Factory Error Synth"
 	uniform = /obj/item/clothing/under/color/white

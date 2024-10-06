@@ -95,6 +95,13 @@
 	icon_state = "crowbar_powergame"
 	inhand_icon_state = "crowbar_red"
 
+/obj/item/crowbar/large/heavy/anastetick //pedal magic
+	name = "ultra heavy medical crowbar"
+	desc = "It's a big crowbar. It doesn't fit in your pockets, because it's big. It feels oddly heavy.."
+	force = 35
+	throwforce = 90
+	var/dam_type = STAMINA
+
 /obj/item/crowbar/large/old
 	name = "old crowbar"
 	desc = "It's an old crowbar. Much larger than the pocket sized ones, carrying a lot more heft. They don't make 'em like they used to."

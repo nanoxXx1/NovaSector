@@ -449,6 +449,26 @@ GLOBAL_LIST_INIT(clown_mask_options, list(
 	has_fov = FALSE
 	fishing_modifier = -1
 
+/obj/item/clothing/mask/gas/owl_mask/god
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	cold_protection = CHEST | GROIN | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	max_heat_protection_temperature = SPACE_SUIT_MAX_TEMP_PROTECT
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	armor_type = /datum/armor/owl_mask
+
+/datum/armor/owl_mask
+	melee = 1000
+	bullet = 1000
+	laser = 1000
+	energy = 1000
+	bomb = 1000
+	bio = 1000
+	fire = 1000
+	acid = 1000
+	wound = 1000
+
 /obj/item/clothing/mask/gas/carp
 	name = "carp mask"
 	desc = "Gnash gnash."
