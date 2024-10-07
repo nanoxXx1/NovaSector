@@ -100,7 +100,7 @@
 	desc = "It's a big crowbar. It doesn't fit in your pockets, because it's big. It feels oddly heavy.."
 	force = 35
 	throwforce = 90
-	var/dam_type = STAMINA
+	damtype = STAMINA
 
 /obj/item/crowbar/large/old
 	name = "old crowbar"
